@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #ffe6f0, #e6f2ff);
+    color: #333;
+    height: 450px;
+}
+  
+  iframe {
+    width: 100%;
+    border: none;
+  }
+
+  header{
+    text-align: center; 
+    padding: 20px; 
+    background: linear-gradient(to right, #ffb3d9, #b3d1ff); 
+    color: #fff;
+  }
+  nav {
+    text-align: center;
+    padding: 3px ;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #cc0066;
+  }
+#books{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+  }
+  section {
+    margin: 40px auto;
+     width: 1000px;
+    padding: 0 20px;
+  }
+  
+  section h2 {
+    color: #cc0066;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding-left: 20px;
+    line-height: 1.8;
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #cc0066;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 150px;
+  }
+  
+  button:hover {
+    background-color: #a60052;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #f2f2f2;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+iframe{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+#header{
+    width: 100%;
+    height: 15vh;
+}
+#content{
+    width: 100%;
+    height: 70vh;
+}
+#footer{
+    width: 100%;
+    height: 15vh;
+}
+
+.login-section{
+    max-width: 500px;
+    margin: 80px auto;
+    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(to right, #ffb3d9, #b3d1ff); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #cc0066;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .login-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4e73;
+    color: white;
+  }
+  
+  .small-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  .catalogue-section {
+    width:90%;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.05);
+    
+    background: linear-gradient(to right, #ffb3d9, #b3d1ff); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #af899c;
+    text-align: center;
+  }
+  
+  .book-card {
+    background: #2a2a4a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+td>img{
+    max-width: 800px;
+    max-height: 120px;
+    object-fit: cover;
+}  
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #555;    
+  background: rgba(255, 255, 255, 0.02);
+}
+.book-table th,
+.book-table td {
+  padding: 15px 20px;
+  text-align: center;
+  color: #222;
+  border: 1px solid #555;
+}
+.cart-btn {
+  background-color: #bc618e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+.cart-btn:hover {
+  background-color: #3e4b8c;
+}
