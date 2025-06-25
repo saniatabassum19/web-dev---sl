@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(135deg, #eecda3, #ef629f);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+        input{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+        button:hover{
+            background: linear-gradient(to right, #2e4279, #c71a1a);
+            color: #fff;
+            cursor: pointer;
+            transition: 0.5s;   
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Click the button to get the current date</h2>
+        <input type="text" name="date" id="date" placeholder="Enter date">
+        <button type="button" id="btn" onclick="getDate()">Get Date</button>
+    </div>
+    <script>
+        function getDate(){
+        document.getElementById("date").value = new Date().toLocaleDateString();
+    }
+    </script>
+</body>
+</html>

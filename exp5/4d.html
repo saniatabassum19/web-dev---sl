@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #2a8e7ed9;
+            margin: 31vh;
+            align-self: center;
+            text-align: center;
+            
+        h1{font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #3d2d2d;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #925c5c;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sum of two numbers</h1>
+    <button type="button" onclick="sum()">Sum</button>
+    <script>
+        function sum(){
+            s=0;
+            let number= parseInt(prompt("Enter a number"));
+            if(isNaN(number)){
+                prompt("enter the number again");
+                return s();
+            }
+            else{
+                s += number;
+               while(confirm("Do you want to enter another number?")){
+                number2= parseInt(prompt("Enter a number"));
+                if(isNaN(number2)){
+                    prompt("enter the number again");
+                    return s();
+                }
+                else{
+                    s += number2;
+                }
+               }
+               confirm("The sum of the numbers is " + s);
+            }
+        }
+    </script>
+</body>
+</html>

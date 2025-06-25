@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #bac2e6;
+            margin: 31vh;
+            align-self: center;
+            text-align: center;
+        }
+        h1{font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #3d2d2d;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #925c5c;
+            border-radius: 5px;
+            width: 200px;
+        }
+        button:hover{
+            background: linear-gradient(to right, #2e4279, #3d2d2d);
+            color: #fff;
+            cursor: pointer;
+            transition: 0.5s;   
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Factorial of a number</h1>
+    <button type="button" onclick="factorial()">Factorial</button>
+    <script>
+        function factorial(){
+            let number = parseInt(prompt("Enter a number"));
+            if (number < 0){
+                alert("Factorial of a negative number is not possible");
+            }
+            else{
+                let fac = 1;
+                for(let i = 1; i <= number; i++){
+                fac *= i;
+            }
+            alert("Factorial of " + number + " is " + fac);
+        }
+    }
+    </script>
+</body>
+</html>
